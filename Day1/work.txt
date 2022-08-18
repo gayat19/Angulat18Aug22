@@ -1,0 +1,49 @@
+SPA -> Single Page Application
+AngularJS -> JS
+
+Angular2-> Node
+
+MEAN-> MongoExpressAngularNode
+MERN-> MongoExpressReactNode
+
+Node -> Hosting server
+
+Componenets
+
+TypeScript
+
+ng new <appname>
+
+cd <appname>
+
+Open the folder in VS Code
+
+Component.ts - Comp[onent
+Component.spec.ts - testing
+component.html -> view -> html content
+component.css - styling
+
+Binding
+ Oneway
+   Interpollation
+   Property
+   Event
+ 2-way
+
+
+ng g c <componentname>
+
+Please siplay the thumbs-up symbol
+Everytime it is clicked increase the likes count
+display the number of likes beside the icon
+
+
+Create a component with name Customer
+customer name
+customer age
+customer phone
+display a star to show fav or not
+
+use 2-way binding to display data
+
+

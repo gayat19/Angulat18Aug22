@@ -1,0 +1,23 @@
+<p>first works!</p>
+Hello 
+{{
+    customer_name
+}}...
+<input type="text" value="{{customer_name}}">
+<br>
+<input type="text" [value]="customer_name">
+<div [class]="chooseClass">
+    This will show the style
+</div>
+<button class="btn btn-primary" (click)="changeStyle()">Change the Style</button>
+<hr>
+<span [class]="toggleStyle" (click)="toggle()"></span>
+<hr>
+<span [class]="toggleValue?'glyphicon glyphicon-heart':'glyphicon glyphicon-heart-empty'" (click)="toggleValue=!toggleValue"></span>
+<br>
+
+<span class="glyphicon glyphicon-thumbs-up" (click)="like()"></span>{{likesCount}}
+<br>
+<input type="text" [value]="customer_name" #cname (change)="changeName(cname.value)">
+<br>
+<input type="text" [(ngModel)]="customer_name">
