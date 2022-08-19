@@ -1,0 +1,39 @@
+models
+  customer.ts
+
+services
+  CustomerService.ts
+
+
+
+Service
+  array of customer
+
+add an customer
+Display teh list of customers
+
+
+ngFor -> structral directive
+
+
+create a new angular application 
+name: eshopping
+model : product
+          id
+	       name
+			 price
+			 pic
+			 quantity
+			 likes(number)
+service : productService
+				addProduct
+				getAllProducts
+				getProductById
+
+component : productComponent
+					display the products
+
+				addProduct
+					add a product
+Note -> display the product in card layout(bootstrap)
+
