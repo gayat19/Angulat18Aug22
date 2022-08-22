@@ -4,10 +4,22 @@
 <!-- <app-sample></app-sample>
 <app-first></app-first> -->
 <!-- <app-customer></app-customer> -->
-<div>
+<div [ngSwitch]="choice">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+      <div class="navbar-nav">
+        <a (click)="choice='show'" class="nav-item nav-link">Show</a>
+        <a (click)="choice='add'" class="nav-item nav-link">Add</a>
+      </div>
+  </nav>
+
+<div *ngSwitchCase="'show'">
   <app-customers></app-customers>
 </div>
 
-<div>
+<div *ngSwitchCase="'add'">
   <app-add-customer></app-add-customer>
 </div>
+
+</div>
+

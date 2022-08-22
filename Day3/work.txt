@@ -1,0 +1,30 @@
+ngIf
+
+hidden -> directive
+
+Intercomponent communication (Parent and child)
+   input and output
+
+install bootstrap
+
+npm i bootstrap --save
+
+
+Create the following components
+
+Edit product
+which can edit the quantity of the product
+
+In the products component add a button which says add to cart
+
+Implement the functionality of cart
+
+HOw many service? 1
+
+In the product Service
+	add anotehr array for cart
+   add a methods-addToCart()
+
+Note: If the quantity of product is 0 then hide the buy button
+
+

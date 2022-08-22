@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { customer } from '../models/customer';
 
 @Component({
@@ -8,12 +8,16 @@ import { customer } from '../models/customer';
 })
 export class CustomerComponent implements OnInit {
 
-  customer:customer;
+  @Input() customer:customer;
+  @Output() clickCheck:EventEmitter<string> = new EventEmitter();
   constructor() { 
     this.customer = new  customer(101,"Tim",21,"./assets/images/Pizza1.jpg")
   }
 
   ngOnInit(): void {
+  }
+  showEvent(){
+    this.clickCheck.emit("You have clicked "+this.customer.id)
   }
 
 }

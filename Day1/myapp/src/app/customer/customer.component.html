@@ -6,5 +6,5 @@ Name: {{customer.name}}
 <br>
 Age: {{customer.age}}
 <br>
-<img [src]="customer.pic" alt="NO image" height="200" width="200">
+<img (click)="showEvent()" [src]="customer.pic" alt="NO image" height="200" width="200">
 </div>

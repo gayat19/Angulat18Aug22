@@ -1,12 +1,14 @@
 
 <p>customer works!</p>
-<div class="alert alert success" *ngFor="let customer of customers">
-Id: {{customer.id}}
-<br>
-Name: {{customer.name}}
-<br>
-Age: {{customer.age}}
-<br>
-<img [src]="customer.pic" alt="NO image" height="200" width="200">
+<div  [hidden]="customers.length==0">
+<!-- <div  *ngIf="customers.length>0; else nocust"> -->
+    <h1>Customer details</h1>
+    <div class="alert alert success"  *ngFor="let cust of customers">
+       <app-customer [customer]="cust" (clickCheck)="handleCheck($event)"></app-customer>
+    </div>
 </div>
-
+<ng-template  #nocust>
+    <span class="alert alert-danger">
+        No customers yet
+    </span>
+</ng-template>

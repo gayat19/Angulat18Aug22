@@ -16,6 +16,9 @@ Display teh list of customers
 ngFor -> structral directive
 
 
+communication between 2 components using service
+
+
 create a new angular application 
 name: eshopping
 model : product
@@ -30,10 +33,12 @@ service : productService
 				getAllProducts
 				getProductById
 
-component : productComponent
+component : productsComponent
 					display the products
 
 				addProduct
 					add a product
 Note -> display the product in card layout(bootstrap)
+	     Inject the productService
+		  take teh injection in addProduct and products componenets
 

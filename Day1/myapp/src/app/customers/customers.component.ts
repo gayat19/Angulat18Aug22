@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { concatWith } from 'rxjs';
 import { customer } from '../models/customer';
 import { CustomerService } from '../services/customer.service';
 
@@ -18,5 +19,7 @@ export class CustomersComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  handleCheck(eventArgs:any){
+    console.log(eventArgs);
+  }
 }
