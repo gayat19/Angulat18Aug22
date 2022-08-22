@@ -1,3 +1,4 @@
+
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../models/product';
 import { CartService } from '../services/cart.service';
@@ -9,11 +10,11 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
+  dob:Date;
   @Input() product:Product =new Product();
   @Output() buyPizzaEvent = new EventEmitter<number>();
   constructor(private cartService:CartService,private productService:ProductService) { 
-  
+    this.dob = new Date("2001-09-19");
   }
 
   ngOnInit(): void {
