@@ -1,0 +1,36 @@
+<table>
+    <tr>
+        <td>
+            Product ID
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Price
+        </td>
+        <td>
+            Quantity
+        </td>
+        <td>
+          Image
+        </td>
+    </tr>
+    <tr *ngFor="let product of cart">
+        <td>
+           {{product.id}}
+        </td>
+        <td>
+            {{product.name}}
+        </td>
+        <td>
+            {{product.price}}
+        </td>
+        <td>
+            {{product.quantity}}
+        </td>
+        <td>
+            <img [src]="product.pic" height="100" width="100" alt="No img">
+        </td>
+    </tr>
+</table>

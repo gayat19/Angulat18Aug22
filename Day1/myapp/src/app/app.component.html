@@ -1,6 +1,4 @@
-<h1>
-  Hello World!! {{title}}
-</h1>
+
 <!-- <app-sample></app-sample>
 <app-first></app-first> -->
 <!-- <app-customer></app-customer> -->
@@ -8,17 +6,22 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
       <div class="navbar-nav">
-        <a (click)="choice='show'" class="nav-item nav-link">Show</a>
-        <a (click)="choice='add'" class="nav-item nav-link">Add</a>
+        <a (click)="choice='show'" class="nav-item nav-link">Products</a>
+        <a (click)="choice='edit'" class="nav-item nav-link">Edit</a>
+        <a (click)="choice='add'" class="nav-item nav-link">Cart</a>
       </div>
   </nav>
 
 <div *ngSwitchCase="'show'">
-  <app-customers></app-customers>
+  <app-products></app-products>
 </div>
 
 <div *ngSwitchCase="'add'">
-  <app-add-customer></app-add-customer>
+  <app-cart></app-cart>
+</div>
+
+<div *ngSwitchCase="'edit'">
+    <app-edit-product></app-edit-product>
 </div>
 
 </div>

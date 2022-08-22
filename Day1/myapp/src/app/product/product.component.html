@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;" *ngIf="checkQuanity()>0">
+    <img class="card-img-top" [src]="product.pic" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">
+        {{product.name}}
+      </h5>
+      <p class="card-text">
+       This pizza is priced @ <b>{{product.price}}</b> 
+       <br>
+       The stock available now is {{product.quantity}}
+      </p>
+      <a  class="btn btn-primary" (click)="buyPizza()">Add to Cart</a>
+    </div>
+  </div>

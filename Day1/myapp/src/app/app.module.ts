@@ -10,6 +10,12 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomersComponent } from './customers/customers.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { CustomerService } from './services/customer.service';
+import { ProductComponent } from './product/product.component';
+import { ProductService } from './services/product.service';
+import { CartService } from './services/cart.service';
+import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +24,18 @@ import { CustomerService } from './services/customer.service';
     FirstComponent,
     CustomerComponent,
     CustomersComponent,
-    AddCustomerComponent
+    AddCustomerComponent,
+    ProductComponent,
+    ProductsComponent,
+    CartComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [CustomerService],
+  providers: [CustomerService,ProductService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
