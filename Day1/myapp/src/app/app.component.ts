@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']//style content
 })
 export class AppComponent {
-  title = 'Gayathri Mahadevan';
+
   choice:string="home"
+  data:string= "This will show how to create a custom pipe to alter the look"
 }

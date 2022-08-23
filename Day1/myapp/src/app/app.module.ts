@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { FirstComponent } from './first/first.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomersComponent } from './customers/customers.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
@@ -16,6 +16,10 @@ import { CartService } from './services/cart.service';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { TextPipe } from './text.pipe';
+import { ShowchangeDirective } from './showchange.directive';
+import { PaymentComponent } from './payment/payment.component';
+import { CardformatDirective } from './cardformat.directive';
 
 @NgModule({
   declarations: [
@@ -28,12 +32,17 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     ProductComponent,
     ProductsComponent,
     CartComponent,
-    EditProductComponent
+    EditProductComponent,
+    TextPipe,
+    ShowchangeDirective,
+    PaymentComponent,
+    CardformatDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [CustomerService,ProductService,CartService],
   bootstrap: [AppComponent]

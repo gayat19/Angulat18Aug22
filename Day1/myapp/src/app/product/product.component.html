@@ -2,7 +2,7 @@
     <img class="card-img-top" [src]="product.pic" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">
-        {{product.name | uppercase | lowercase}}
+        {{product.name | uppercase }}
       </h5>
       <p class="card-text">
        This pizza is priced @ <b>{{product.price | currency:'INR'}}</b> 
@@ -12,6 +12,8 @@
       <a  class="btn btn-primary" (click)="buyPizza()">Add to Cart</a>
     </div>
   </div>
-  <div>
-    {{dob | date:'dd-MMM-yyyy'}}
+
+  <div appShowchange>
+    <!-- {{dob | date:'dd-MMM-yyyy'}} -->
+   {{ product| json}}
   </div>

@@ -1,0 +1,26 @@
+custom pipes
+custom directives
+
+validations
+  Template driven validation
+  Reactive form validation
+   import reactiveforms
+   create a fromgroup object
+	add formcontrold to the object
+	add validations to the control
+	associate the controls from ts to html
+	check them in html
+
+Create a Register componenet
+   Username - should be an email
+	password
+   retype password
+Ensure you do validation for the same
+Create a USerService and add users to the array
+
+Note:- Password should be min 6 chars
+Show error msg in the same component(not as alert)
+Use directive to choose the coclor of error
+
+
+

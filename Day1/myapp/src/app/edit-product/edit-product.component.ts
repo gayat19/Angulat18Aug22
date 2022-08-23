@@ -11,6 +11,7 @@ export class EditProductComponent implements OnInit {
 
   product:Product;
   products:Product[];
+  check:boolean = false;
   constructor(private productService:ProductService) { 
     this.product = new Product();
     this.products = this.productService.getProducts();
@@ -25,8 +26,9 @@ export class EditProductComponent implements OnInit {
   ngOnInit(): void {
   }
   updateProduct(){
-    this.productService.editProduct(this.product);
-    alert("Product details updated");
+    console.log(this.product.name);
+    // this.productService.editProduct(this.product);
+    // alert("Product details updated");
   }
 
 }

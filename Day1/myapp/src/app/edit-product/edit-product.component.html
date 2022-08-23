@@ -5,11 +5,35 @@
     </select>
     <div *ngIf="product.id">
        <label class="form-control">Product Name</label>
-       <input type="text" [(ngModel)]="product.name" class="form-control">
+       <input type="text" [(ngModel)]="product.name"  required minlength="5" class="form-control" #pname="ngModel">
+       <span class="alert alert-danger" *ngIf="pname.touched && pname.invalid">
+            <span *ngIf="pname.errors['required']">
+                Product Name cannot be empty
+            </span>
+            <span *ngIf="pname.errors['minlength']">
+                Product Name has to be minimum {{pname.errors['minlength'].requiredLength}} chars
+            </span>
+       </span>
        <label class="form-control">Product Price</label>
-       <input type="number" [(ngModel)]="product.price" class="form-control">
+       <input type="number" [(ngModel)]="product.price" required min="1" class="form-control" #pprice="ngModel">
+       <span class="alert alert-danger" *ngIf="pprice.touched && pprice.invalid">
+        <span *ngIf="pprice.errors['required']">
+            Product price cannot be empty
+        </span>
+        <span *ngIf="pprice.errors['min']">
+            Product price has to be positive
+        </span>
+   </span>
        <label class="form-control">Product Quantity</label>
-       <input type="number" [(ngModel)]="product.quantity" class="form-control">
-       <button class="btn btn-warning" (click)="updateProduct()">Update</button>
+       <input type="number" [(ngModel)]="product.quantity" min="0" required class="form-control" #pquantity="ngModel">
+       <span class="alert alert-danger" *ngIf="pquantity.touched && pquantity.invalid">
+        <span *ngIf="pquantity.errors['required']">
+            Product quantity cannot be empty
+        </span>
+        <span *ngIf="pquantity.errors['min']">
+            Product quantity has to be positive
+        </span>
+   </span>
+       <button class="btn btn-warning" [disabled]="!pname.valid || !pprice.valid || !pquantity.valid"  (click)="updateProduct()">Update</button>
     </div>
 </div>

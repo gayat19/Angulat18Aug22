@@ -1,0 +1,24 @@
+<h2>Visa Power</h2>
+<form [formGroup]="myForm" (ngSubmit)="buy()">
+    <table>
+        <tr>
+            <td>Card Holder Name</td>
+            <td><input type="text" class="form-control" formControlName="cname"></td>
+            <span class="alert alert-danger" *ngIf="cname.touched && !cname.valid">
+                Card Holder Name cannot be empty
+            </span>
+        </tr>
+        <tr>
+            <td>Card Number</td>
+            <td><input type="text" [appCardformat]="'HELLO'" class="form-control" formControlName="cnumber"></td>
+            <span class="alert alert-danger" *ngIf="cnumber.touched && !cnumber.valid">
+                Card Number cannot be empty
+            </span>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary" *ngIf="myForm.valid">Make Payment</button>
+            </td>
+        </tr>
+    </table>
+</form>

@@ -13,13 +13,18 @@ export class CartComponent implements OnInit {
   animal:Animal;
   horse:Horse;
   cart:Product[];
+  show:boolean;
   constructor(private cartService:CartService) { 
     this.cart = this.cartService.getCart();
     this.animal = new Animal();
     this.horse = this.animal;
+    this.show = false;
   }
 
   ngOnInit(): void {
+  }
+  showPayment(){
+    this.show = !this.show;
   }
 
 }
