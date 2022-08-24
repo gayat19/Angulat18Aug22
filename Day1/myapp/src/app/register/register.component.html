@@ -1,0 +1,28 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" formControlName="username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="text" formControlName="password"></td>
+            <span *ngIf="password.invalid">
+                {{password.errors |json}}
+            </span>
+        </tr>
+        <tr>
+            <td>Re-Type Password</td>
+            <td><input type="password" formControlName="rePass"></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-success">Register</button>
+            </td>
+            <td>
+                <button class="btn btn-danger">Cancel</button>
+            </td>
+        </tr>
+    </table>
+
+</form>

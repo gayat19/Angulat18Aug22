@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from '../models/product';
 import { ProductService } from '../services/product.service';
 
@@ -12,7 +13,7 @@ export class EditProductComponent implements OnInit {
   product:Product;
   products:Product[];
   check:boolean = false;
-  constructor(private productService:ProductService) { 
+  constructor(private productService:ProductService, private router:Router) { 
     this.product = new Product();
     this.products = this.productService.getProducts();
   }
@@ -26,9 +27,11 @@ export class EditProductComponent implements OnInit {
   ngOnInit(): void {
   }
   updateProduct(){
-    console.log(this.product.name);
-    // this.productService.editProduct(this.product);
-    // alert("Product details updated");
+    //console.log(this.product.name);
+    this.productService.editProduct(this.product);
+    alert("Product details updated");
+    this.router.navigate(['products']);
+    this.router.navigateByUrl('products')
   }
 
 }

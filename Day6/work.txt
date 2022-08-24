@@ -1,0 +1,14 @@
+Routing
+  place holder
+  Defining the routes-map them with components
+  providing the link to edit the URL	
+
+Pass parameters in routes
+child routes
+
+Registers-> take him to the home page of products
+Create a compoenent Login -> check for teh username and password from teh userService
+		Redirect to Products if login is sucecssful
+
+Home screen has only links to login&Register&Products
+

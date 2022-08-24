@@ -20,6 +20,11 @@ import { TextPipe } from './text.pipe';
 import { ShowchangeDirective } from './showchange.directive';
 import { PaymentComponent } from './payment/payment.component';
 import { CardformatDirective } from './cardformat.directive';
+import { DitestComponent } from './ditest/ditest.component';
+import { TestDirective } from './test.directive';
+import { RegisterComponent } from './register/register.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { ListproductComponent } from './listproduct/listproduct.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,12 @@ import { CardformatDirective } from './cardformat.directive';
     TextPipe,
     ShowchangeDirective,
     PaymentComponent,
-    CardformatDirective
+    CardformatDirective,
+    DitestComponent,
+    TestDirective,
+    RegisterComponent,
+    ProductdetailComponent,
+    ListproductComponent
   ],
   imports: [
     BrowserModule,

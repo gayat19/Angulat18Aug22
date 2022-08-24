@@ -1,0 +1,11 @@
+<p>listproduct works!</p>
+<ol>
+    <li *ngFor="let product of products">
+        <button class="btn btn-info" (click)="showDetails(product.id)">{{product.id}}</button>
+        <hr>
+    </li>
+</ol>
+<hr>
+<div>
+    <router-outlet></router-outlet>
+</div>
