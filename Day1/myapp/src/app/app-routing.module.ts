@@ -5,6 +5,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { ListproductComponent } from './listproduct/listproduct.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { ProductsComponent } from './products/products.component';
+import { UnderstandComponent } from './understand/understand.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   ]},
 
   {path:'details/:pid',component:ProductdetailComponent},
+  {path:'',component:UnderstandComponent}
 
 ];
 

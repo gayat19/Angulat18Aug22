@@ -12,3 +12,6 @@ Create a compoenent Login -> check for teh username and password from teh userSe
 
 Home screen has only links to login&Register&Products
 
+Research -> promises + Local storage
+
+

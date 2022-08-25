@@ -13,7 +13,9 @@ export class ProductsComponent implements OnInit {
   constructor(private productService:ProductService) { 
     this.products = this.productService.getProducts();
   }
-
+  change(){
+    this.products[0] = new Product(103,"asjkdfha",20,90,'./assets/images/Pizza1.jpg')
+  }
   ngOnInit(): void {
   }
 

@@ -25,6 +25,7 @@ import { TestDirective } from './test.directive';
 import { RegisterComponent } from './register/register.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { ListproductComponent } from './listproduct/listproduct.component';
+import { UnderstandComponent } from './understand/understand.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ListproductComponent } from './listproduct/listproduct.component';
     TestDirective,
     RegisterComponent,
     ProductdetailComponent,
-    ListproductComponent
+    ListproductComponent,
+    UnderstandComponent
   ],
   imports: [
     BrowserModule,

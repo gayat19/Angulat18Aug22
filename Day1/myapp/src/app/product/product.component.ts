@@ -1,5 +1,5 @@
 
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Product } from '../models/product';
 import { CartService } from '../services/cart.service';
 import { ProductService } from '../services/product.service';
@@ -9,15 +9,20 @@ import { ProductService } from '../services/product.service';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent implements OnInit, OnChanges {
   dob:Date;
   @Input() product:Product =new Product();
   @Output() buyPizzaEvent = new EventEmitter<number>();
   constructor(private cartService:CartService,private productService:ProductService) { 
     this.dob = new Date("2001-09-19");
   }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("Change triggered")
+    console.log(changes);
+  }
 
   ngOnInit(): void {
+    console.log('init')
   }
   checkQuanity(){
     if(this.product != undefined)
