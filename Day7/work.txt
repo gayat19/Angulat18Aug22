@@ -1,0 +1,17 @@
+Observables
+
+Routing parameter
+
+Custom Observable
+
+Lifecycle hooks
+do check
+
+
+Create a new component and please try all the life cycle hooks
+Ensure to create a parentr and child
+
+Employee - child
+Employees - parent
+
+init,destroy, change, docheck

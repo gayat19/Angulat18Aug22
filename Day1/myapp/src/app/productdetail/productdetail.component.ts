@@ -17,10 +17,10 @@ export class ProductdetailComponent implements OnInit,OnChanges {
       console.log("Hello - from constructor")
     // this.pid = this.activatedRoute.snapshot.params["pid"];
     // this.product = this.productService.getProductById(this.pid)
-    this.activatedRoute.params.subscribe((data)=>{
-      this.pid = data['pid'];
-      this.product = this.productService.getProductById(this.pid)
-    });
+    // this.activatedRoute.params.subscribe((data)=>{
+    //   this.pid = data['pid'];
+    //   this.product = this.productService.getProductById(this.pid)
+    // });
   }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("Hello - from Change")
@@ -28,6 +28,11 @@ export class ProductdetailComponent implements OnInit,OnChanges {
 
   ngOnInit(): void {
     console.log("Hello - from INit")
+  }
+  ngDoCheck(){
+    console.log('do check triggered')
+    this.pid = this.activatedRoute.snapshot.params["pid"];
+    this.product = this.productService.getProductById(this.pid)
   }
 
 }
