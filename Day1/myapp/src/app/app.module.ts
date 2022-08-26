@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,9 @@ import { RegisterComponent } from './register/register.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { ListproductComponent } from './listproduct/listproduct.component';
 import { UnderstandComponent } from './understand/understand.component';
+import { PostComponent } from './post/post.component';
+import { BlogPostService } from './services/blogpost.service';
+import { ProductHttpService } from './services/producthttp.service';
 
 @NgModule({
   declarations: [
@@ -48,15 +52,17 @@ import { UnderstandComponent } from './understand/understand.component';
     RegisterComponent,
     ProductdetailComponent,
     ListproductComponent,
-    UnderstandComponent
+    UnderstandComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [CustomerService,ProductService,CartService],
+  providers: [CustomerService,ProductService,CartService,BlogPostService,ProductHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

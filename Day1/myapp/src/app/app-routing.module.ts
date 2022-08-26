@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { ListproductComponent } from './listproduct/listproduct.component';
+import { PostComponent } from './post/post.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { ProductsComponent } from './products/products.component';
 import { UnderstandComponent } from './understand/understand.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   ]},
 
   {path:'details/:pid',component:ProductdetailComponent},
+  {path:'post',component:PostComponent},
   {path:'',component:UnderstandComponent}
 
 ];
