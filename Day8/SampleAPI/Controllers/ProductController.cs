@@ -13,7 +13,7 @@ namespace SampleAPI.Controllers
     {
         private readonly IRepo _repo;
 
-        public ProductController(IRepo repo)
+        public ProductController(IRepo repo)    
         {
             _repo = repo;
         }

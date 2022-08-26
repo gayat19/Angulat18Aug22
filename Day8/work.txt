@@ -1,0 +1,9 @@
+API call
+  Http module
+ 
+importt the module
+Create a service that takes teh http client as injection
+user the http client object to invoke teh http methods - GET,PUT,POST and DELETE
+
+Call these methods in teh component -> Subscribe
+Create method that will take the data and help to be displayed/sent

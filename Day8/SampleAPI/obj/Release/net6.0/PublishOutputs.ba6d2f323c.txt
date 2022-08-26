@@ -1,0 +1,11 @@
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\SampleAPI.exe
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\SampleAPI.dll
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\SampleAPI.deps.json
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\SampleAPI.runtimeconfig.json
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\SampleAPI.pdb
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Corp\CMS\AngularTRaining\Day8\SampleAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

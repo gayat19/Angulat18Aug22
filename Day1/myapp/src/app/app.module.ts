@@ -30,6 +30,7 @@ import { UnderstandComponent } from './understand/understand.component';
 import { PostComponent } from './post/post.component';
 import { BlogPostService } from './services/blogpost.service';
 import { ProductHttpService } from './services/producthttp.service';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ProductHttpService } from './services/producthttp.service';
     ProductdetailComponent,
     ListproductComponent,
     UnderstandComponent,
-    PostComponent
+    PostComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
