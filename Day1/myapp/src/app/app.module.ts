@@ -31,6 +31,8 @@ import { PostComponent } from './post/post.component';
 import { BlogPostService } from './services/blogpost.service';
 import { ProductHttpService } from './services/producthttp.service';
 import { AddProductComponent } from './add-product/add-product.component';
+import { WeatherComponent } from './weather/weather.component';
+import { WeatherService } from './services/weather.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { AddProductComponent } from './add-product/add-product.component';
     ListproductComponent,
     UnderstandComponent,
     PostComponent,
-    AddProductComponent
+    AddProductComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +67,7 @@ import { AddProductComponent } from './add-product/add-product.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [CustomerService,ProductService,CartService,BlogPostService,ProductHttpService],
+  providers: [CustomerService, WeatherService,ProductService,CartService,BlogPostService,ProductHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

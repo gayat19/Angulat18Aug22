@@ -6,7 +6,7 @@
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="text" formControlName="password"></td>
+            <td><input type="text" [value]="encodedPass" formControlName="password" (blur)="encodePass()"></td>
             <span *ngIf="password.invalid">
                 {{password.errors |json}}
             </span>
