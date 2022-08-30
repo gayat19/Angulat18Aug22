@@ -1,0 +1,28 @@
+Authentication
+   Token
+   Encryption
+   State Management
+Route Protectection
+
+
+Links
+https://pixabay.com/api/docs/
+https://pixabay.com/
+
+Create an angular application that will have a search text box and button
+When searched should fetch the first 20 images from pixabay
+
+Display the images a formated order
+
+Have a menu with option to search and view paste searches
+
+When the menu for past searches is hit it should show the search keywords
+
+Improvement-> 
+1) You can make teh search keywords link to the search again
+
+2) Create a login page and verify the user name and password
+Please create a array of users in a service and verify the uername and password against it.
+If the user is valid take the key for pixabay from the user and store it for the user and use it to fetch from pixabay
+
+
